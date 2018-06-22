@@ -1,0 +1,11 @@
+text		group
+
+		section	.data,text
+		section	.text,text
+		section	.rdata,text
+		section	.sdata,text
+		section	.bss,text
+		section	.sbss,text
+		include	spec_psx/TEST.obj
+		;incsym	main.sym
+
