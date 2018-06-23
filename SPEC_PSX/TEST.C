@@ -1,8 +1,16 @@
-#include "TEST.H"
-
 #include "SPECIFIC.H"
 
 #include <STDIO.H>
+
+long *TestPtr;
+
+void TestOne();
+void TestTwo();
+
+void *func[] __attribute__((section(".header"))) = {
+	TestOne,
+	TestTwo,
+};
 
 void TestOne()
 {
